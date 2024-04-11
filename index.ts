@@ -2,9 +2,8 @@
 import inquirer from "inquirer"; 
 import chalk from "chalk";
 
-
-const randomNumber = Math.floor(Math.random()*10 );
 console.log(chalk.bold.magenta("Welcome to Number Guessing Game"));
+const randomNumber = Math.floor(Math.random()*10 );
 const answers = await inquirer.prompt([
     {
         name: "userGuessedNumber",
